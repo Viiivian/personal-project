@@ -1,14 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    color: #666666;
+}
+
 body {
     font-family:
         /*西文*/
-        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        "Amaranth",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
         /*中文*/
         "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-    overflow-x: hidden;
-
-
+         overflow-x: hidden;
 }
 
 a {
@@ -46,20 +50,13 @@ a {
     --title-m: 40px;
     --title-s: 30px;
 
+    --txt-XL: 24px;
     --txt-L: 20px;
     --txt-m: 18px;
     --txt-s: 16px;
 }
 
-.font-playfairy {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-}
-
-.font-noto-sans {
-    font-family: "Noto Sans TC", sans-serif;
-    font-optical-sizing: auto;
-}
+/* common */
 .txt-purple{
     color: var(--txt-purple);
 }
@@ -69,8 +66,11 @@ a {
 .txt-blue{
     color: var(--btn-blue);
 }
-/* topbar */
 
+
+
+/* STRAT FROME HERE */
+/* navbar */
 nav.navbar {
     position: fixed;
     top: 10px;
@@ -110,7 +110,7 @@ ul.navbar-nav a:hover {
 .top-relative {
     width: 100%;
     padding-bottom: 56.25%;
-    /* 16:9 宽高比 */
+    /* 16:9 寬高比 */
     overflow: hidden;
     position: relative;
 }
@@ -121,16 +121,36 @@ div #carousel-banner {
 }
 
 .banner-txt {
+    font-size: var(--title-m);
+    letter-spacing: -2px;
     position: absolute;
     z-index: 10;
     top: 150px;
     left: 7%;
 }
+.banner-content{
+    font-size: var(--txt-XL);
 
+}
 
 .btn-reserve, .btn-translate{
     font-size: var(--btn-txt-m);
+    width: 230px;
 }
+.btn-reserve{
+    background: var(--btn-pink);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    margin-right: 10px;
+}
+.btn-translate{
+    background: var(--btn-blue);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+}
+
 
 .type-title .col img {
     max-width: 80%;
@@ -200,6 +220,7 @@ div #carousel-banner {
 
 .num-row {
     position: absolute;
+    /* 置中對齊 */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
