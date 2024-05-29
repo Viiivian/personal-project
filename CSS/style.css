@@ -36,7 +36,19 @@ a {
     --txt-purple:#B24FFF;
     --title-purple:#E862FF;
     --num-purple:#B481FF;
-    --select-purple:#A313BB
+    --select-purple:#A313BB;
+
+    /* font-size */
+    --btn-txt-m: 24px;
+    --btn-txt-s: 20px;
+
+    --title-L: 48px;
+    --title-m: 40px;
+    --title-s: 30px;
+
+    --txt-L: 20px;
+    --txt-m: 18px;
+    --txt-s: 16px;
 }
 
 .font-playfairy {
@@ -87,7 +99,7 @@ ul.navbar-nav {
 }
 
 ul.navbar-nav a:hover {
-    background-color: #E4CCFF;
+    background-color: var(--btn-hover);
     border-radius: 30px;
     opacity: .7;
     font-weight: 400;
@@ -100,6 +112,7 @@ ul.navbar-nav a:hover {
     padding-bottom: 56.25%;
     /* 16:9 宽高比 */
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -114,12 +127,9 @@ div #carousel-banner {
     left: 7%;
 }
 
-/* .banner-txt h1{
-    font-size: 48px;
-} */
 
-section {
-    display: block;
+.btn-reserve, .btn-translate{
+    font-size: var(--btn-txt-m);
 }
 
 .type-title .col img {
