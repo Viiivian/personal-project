@@ -48,7 +48,15 @@ a {
     font-family: "Noto Sans TC", sans-serif;
     font-optical-sizing: auto;
 }
-
+.txt-purple{
+    color: var(--txt-purple);
+}
+.txt-orange{
+    color: var(--btn-orange);
+}
+.txt-blue{
+    color: var(--btn-blue);
+}
 /* topbar */
 
 nav.navbar {
