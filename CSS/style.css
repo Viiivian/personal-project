@@ -14,6 +14,7 @@ body {
         /*中文*/
         "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
          overflow-x: hidden;
+
 }
 .mansalva-regular {
     font-family: "Mansalva", sans-serif;
@@ -308,11 +309,51 @@ div #carousel-banner {
 } */
 
 /* feedback */
-.feedback h2 img {
+.feedback .f-title img {
     width: 72px;
     height: 64px;
-
 }
+.f-title{
+    font-size: var(--title-L);
+}
+.f-title img{
+    width: 64px;
+    height: 72px;
+    padding-left: 5px;
+}
+.f-title span{
+    margin-left: 10px;
+    color: var(--title-purple);
+    text-align: center;
+}
+
+/* comment-card */
+.comment{
+    background-color: #F9F4FB;
+    border-radius: 10px;
+    border: 1px solid #BEA1FB;
+    padding: 17px 30px;
+    gap: 10px;
+}
+.s-infor{
+    gap: 15px;
+}
+.s-pic img{
+    width: 63px;
+    height: 63px;
+}
+
+.s-detail p, .s-detail img {
+    margin: 0;
+    padding: 0;
+}
+
+.s-detail img{
+    width: 89px;
+    height: 15px;
+}
+
+
 
 /* about */
 .about-bkg{
