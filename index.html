@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>鈕扣英文|Button English</title>
     <link rel="icon" href="./IMAGE/logo-s.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
@@ -129,7 +125,7 @@
             <!-- 三個課程分類 -->
             <div class="course-types row d-flex justify-content-evenly mt-5">
 
-                <a href="" class="col-xl-3 col-lg-4 t-course d-flex justify-content-center">
+                <a href="" class="col-xl-3 col-lg-3 t-course d-flex justify-content-center">
                     <img src="./IMAGE/choice-1.png" alt="">
                     <div>
                         <h3>英語課程</h3>
@@ -139,7 +135,7 @@
                     </div>
                 </a>
 
-                <a href="" class="col-xl-3 col-lg-4 t-trans d-flex justify-content-center">
+                <a href="" class="col-xl-3 col-lg-3 t-trans d-flex justify-content-center">
                     <img src="./IMAGE/choice-2.png" alt="">
                     <div>
                         <h3>翻譯服務</h3>
@@ -149,7 +145,7 @@
                     </div>
                 </a>
 
-                <a href="" class="col-xl-3 col-lg-4 t-source d-flex justify-content-center">
+                <a href="" class="col-xl-3 col-lg-3 t-source d-flex justify-content-center">
                     <img src="./IMAGE/choice-3.png" alt="">
                     <div>
                         <h3>學習資源</h3>
@@ -368,9 +364,12 @@
                         </div>
 
                         <div class="about-content">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, voluptatem quis aut quam dolore!<br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum voluptas vero ratione quasi quae incidunt accusamus! Cupiditate, corporis nesciunt?<br>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti temporibus doloribus odit eligendi a, ex id hic.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat assumenda, voluptatem
+                                quis aut quam dolore!<br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorum voluptas vero
+                                ratione quasi quae incidunt accusamus! Cupiditate, corporis nesciunt?<br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti temporibus
+                                doloribus odit eligendi a, ex id hic.</p>
                         </div>
                     </div>
                     <div class="col-2 d-flex flex-column justify-content-between">
@@ -380,13 +379,41 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center"><img src="./IMAGE/purple-tri.png" alt="">
-</div>
+            </div>
         </section>
 
-        <section class="subscribe container">
+
+
+
+        <section class="subscribe container my-5">
             <div class="row">
-                <div class="col-6">text</div>
-                <div class="col-6">test</div>
+                <div class="col-sm-6 reserve-left d-flex flex-column justify-content-around">
+                    <div>
+                        <p>READY TO START YOUR</p>
+                        <p>LEARNING JOURNEY?</p>
+                    </div>
+                    <div class="banner-btn d-flex justify-content-start mt-5">
+                        <a class="btn-reserve p-2" href="">預約課程</a>
+                        <a class="btn-translate p-2" href="">翻譯服務</a>
+                    </div>
+                    
+
+
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="c-subscribe-box u-align-center">
+                        <div class="rainbow"><span></span><span></span></div>
+                        <div class="c-subscribe-box__wrapper">
+                            <h3 class="c-subscribe-box__title">訂閱電子報</h3>
+                            <p class="c-subscribe-box__desc">想即時收到最新的英語學習資訊嗎? 訂閱我們的電子報，把握學習機會!</p>
+                            <form class="c-form c-form--accent c-subscribe-box__form">
+                                <input class="u-align-center" type="email" placeholder="name@cool.internet" />
+                                <input class="full-button" type="submit" value="Subscribe" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -426,6 +453,7 @@
         });
 
     </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
