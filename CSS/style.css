@@ -89,7 +89,6 @@ nav.navbar {
     transform: translateX(-50%);
     /* width: 50%; */
     /* height: 70px; */
-    width: 50%;
     z-index: 999;
     /* 玻璃擬態 */
     background: rgba(255, 255, 255, 0.7);
@@ -99,6 +98,10 @@ nav.navbar {
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.47);
 
+}
+nav .container-fluid{
+    padding-right: 20px;
+    font-weight: 700;
 }
 
 .navbar-brand img {
@@ -113,8 +116,9 @@ ul.navbar-nav a:hover {
     background-color: var(--btn-hover);
     border-radius: 10px;
     opacity: .7;
-    font-weight: 400;
 }
+
+
 
 /* banner */
 
